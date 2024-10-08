@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    background-image: url('download\ \(6\).png'); /* replace with your own image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  } 
+    
+
+header {
+    background-color: #9dd510;
+    color: #000000;
+    padding: 1em;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 70px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 40px auto;
+  }
+  
+  .btn {
+    background-color: #ffd500;
+    color: #000000;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+section {
+    background-color: #fefefe;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 50;
+}
+
+ul {
+    list-style: none;
+    margin: 10;
+    padding: 10;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}

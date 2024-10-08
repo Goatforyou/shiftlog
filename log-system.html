@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="slstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Log System for Mines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <img src="sihh.png" alt="Image Description" style="float: left; width: 180px; height: 180px;;" />
+    <img src="alk.png" alt="Header Image" style="display: block; margin: 0 auto; width: 20%; max-width: 800px;">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+  
+    
+  </header>
+  
+  
+<body>
+    <h1>Shift Log System for Mines</h1>
+    <form id="shift-log-form">
+        <label for="miner-name">Miner Name:</label>
+        <input type="text" id="miner-name" name="miner-name"><br><br>
+        <label for="start-time">Start Time:</label>
+        <input type="datetime-local" id="start-time" name="start-time"><br><br>
+        <label for="end-time">End Time:</label>
+        <input type="datetime-local" id="end-time" name="end-time"><br><br>
+        <label for="events">Events:</label>
+        <textarea id="events" name="events"></textarea><br><br>
+        <button id="submit-btn">Submit</button>
+    </form>
+    <table id="shift-logs-table">
+        <thead>
+            <tr>
+                <th>Miner Name</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Events</th>
+            </tr>
+        </thead>
+        <tbody id="shift-logs-tbody">
+        </tbody>
+    </table>
+    <button>
+        <form id="myForm">
+            <button type="Download">Submit</button>
+            <button id="downloadToExcel">Download to Excel</button>
+          </form>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+
+    <script src="slscript.js"></script>
+</body>
+</html>

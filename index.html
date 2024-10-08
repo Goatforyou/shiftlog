@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Shift Handover Log System for Coal Mines</title>
+    
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some basic styling to make the login form look better */
+        .login-form {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          background-color: #f4ffb7;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          width: 150px;
+        }
+      </style>
+      
+      <div class="login-form">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+      </div>
+      
+      <script>
+        const loginForm = document.querySelector('.login-form');
+      
+        loginForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+      
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+      
+          // TO DO: Add backend API call to validate username and password
+          // For now, just alert the username and password
+          alert(`Username: ${username}, Password: ${password}`);
+        });
+      </script>
+      
+      <!-- Rest of the page content here -->
+</head>
+
+<header>
+    <img src="sihh.png" alt="Image Description" style="float: left; width: 180px; height: 180px;;" />
+    <img src="Ministry-of-Coal-resized.jpg" alt="Header Image" style="display: block; margin: 0 auto; width: 20%; max-width: 800px;">
+    
+  </header>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    
+    
+        <div class="button-container">
+            <button class="btn" onclick="location.href='log-system.html'">Log System</button>
+            <button class="btn" onclick="location.href='safety.html'">Safety</button>
+            <button class="btn" onclick="location.href='erp.html'">ERP</button>
+          </div>
+        <section id="home">
+            <h1>Welcome to our Digital Shift Handover Log System</h1>
+            <p>This system is designed specifically for coal mines to improve shift handovers, enhance safety, and increase productivity.</p>
+        </section>
+        <section id="features">
+            <h2>Key Features</h2>
+            <ol>
+                <li>Shift scheduling and planning <a href="https://www.dgms.gov.in/writereaddata/UploadFile/Metalliferous1961.pdf">click here</a></li>
+                
+                <li>Task assignment and tracking <a href="https://www.notion.so/Task-tracking-f867f5efafe94bf881f97e9002726648?pvs=4">click here</a>"</li>
+                <li>Safety and incident reporting</li>
+                <li>Equipment maintenance and tracking</li>
+                <li>Real-time communication and collaboration</li>
+            </ol>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of experts in the mining industry, dedicated to providing innovative solutions to improve safety and productivity.</p>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Contact us to learn more about our digital shift handover log system and how it can benefit your coal mine.</p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ministry of Coal india </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

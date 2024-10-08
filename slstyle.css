@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #9dd510;
+    color: #000000;
+    padding: 1em;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 70px;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#shift-log-form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#shift-log-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#shift-log-form input, #shift-log-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#shift-log-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#shift-logs-table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+#shift-logs-table th, #shift-logs-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#shift-logs-table th {
+    background-color: #f0f0f0;
+}
